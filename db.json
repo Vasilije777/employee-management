@@ -1,0 +1,29 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Petar Petrović",
+      "role": "Frontend Developer",
+      "status": "Aktivan"
+    },
+    {
+      "id": "2",
+      "name": "Ana Inić",
+      "role": "UI/UX Designer",
+      "status": "Aktivan"
+    },
+    {
+      "name": "Marko Markovic",
+      "role": "Developer",
+      "status": "Aktivan",
+      "id": "Lcl65Ii8UCM"
+    },
+    {
+      "name": "Mitar Miric",
+      "role": "UI/UX Designer",
+      "status": "Neaktivan",
+      "id": "VYXAemKsel0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

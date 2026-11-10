@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem za Evidenciju Zaposlenih</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Evidencija Zaposlenih</h1>
+        <p class="subtitle">Demonstracija JSON Server REST simulacije</p>
+        
+        <hr>
+
+        <div class="form-container">
+            <h3 id="form-title">Dodaj novog zaposlenog</h3>
+            <form id="employee-form">
+                <input type="hidden" id="employee-id">
+                
+                <div class="form-group">
+                    <label for="name">Ime i prezime:</label>
+                    <input type="text" id="name" required placeholder="npr. Marko Marković">
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Pozicija / Uloga:</label>
+                    <input type="text" id="role" required placeholder="npr. Backend Developer">
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status:</label>
+                    <select id="status">
+                        <option value="Aktivan">Aktivan</option>
+                        <option value="Neaktivan">Neaktivan</option>
+                    </select>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" id="submit-btn" class="btn btn-success">Sačuvaj</button>
+                    <button type="button" id="cancel-btn" class="btn btn-secondary" style="display: none;">Otkaži</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <h3>Lista zaposlenih</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Ime i prezime</th>
+                        <th>Pozicija</th>
+                        <th>Status</th>
+                        <th>Akcije</th>
+                    </tr>
+                </thead>
+                <tbody id="employee-table-body">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

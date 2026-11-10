@@ -1,0 +1,108 @@
+:root {
+    --bg-color: #fcfbfa;
+    --card-bg: #ffffff;
+    --primary-color: #556b2f;
+    --primary-hover: #3e4f22;
+    --text-color: #333333;
+    --border-color: #e0dad5;
+    --danger-color: #bc4749;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--border-color);
+    margin-bottom: 30px;
+}
+
+.form-container, .table-container {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: #444;
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #faf9f6;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.btn-success { background-color: var(--primary-color); color: white; }
+.btn-success:hover { background-color: var(--primary-hover); }
+.btn-secondary { background-color: #e0e0e0; color: #333; }
+.btn-danger { background-color: var(--danger-color); color: white; padding: 5px 10px; font-size: 0.85rem; border-radius: 4px; }
+.btn-edit { background-color: #a3b18a; color: #333; padding: 5px 10px; font-size: 0.85rem; margin-right: 5px; border-radius: 4px; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid var(--border-color); }
+th { background-color: #f4f1ea; color: #555; font-weight: 600; }
+tr:hover { background-color: #fdfcf7; }
+.status-badge { background: #e9edd8; padding: 3px 8px; border-radius: 20px; font-size: 0.85rem; color: #4b5e28; font-weight: 600; }
